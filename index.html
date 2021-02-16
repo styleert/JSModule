@@ -1,30 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSModule</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">Calendar Event</header>
-    <main class="main">
-        <div class="addEvent">
-            <div class="sticky">
-                <h2 class="title-event">Add Event</h2>
-                <form action="">
-                    <label for="calendar__input-time" class="calendar__label-time">Time</label>
-                    <input type="time" class="calendar__input-time" min="8:00" max="17:00" required>
-                    <input type="sunbmit">
-                </form>
-                <button type="button"></button>
+    <div class="form-cnt">
+        <form class="form-task">
+            <div class="form-input-cnt">
+                <label for="start-time-field">Start time</label>
+                <input id="start-time-field" class="inpt" type="time" name="time">
             </div>
-        </div>
-        <div class="eventCalendar">
-        </div>
-    </main>
-    <script src="item.js"></script>
-    <script src="main.js"></script>
+            <div class="form-input-cnt">
+                <label for="end-time-field">End time</label>
+                <input id="end-time-field" class="inpt" type="time" name="time">
+            </div>
+            <div class="form-input-cnt">
+                <label for="task-field">Task</label>
+                <input id="task-field" class="inpt" type="text" name="task">
+            </div>
+            <button id="btn" type="submit">Add task</button>
+        </form>
+    </div>
+    <div id="task-cnt" class="tasks-cnt">
+<!--        <div class="time-row-cnt">-->
+<!--            <div class="time-row">-->
+<!--                <span class="time-text">8:00</span>-->
+<!--                <div class="task-cnt">-->
+<!--                    <div class="task">-->
+<!--                        Exercise-->
+<!--                    </div>-->
+<!--                    <div class="task">-->
+<!--                        Exercise-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="time-row">-->
+<!--                <span class="time-text">8:30</span>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+    <script src="./item.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
