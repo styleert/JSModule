@@ -1,4 +1,4 @@
-const _eventArr = [
+const tasks = [
     {start: 0, duration: 15, title: "Exersice"},
     {start: 25, duration: 30, title: "Travel to work"},
     {start: 30, duration: 30, title: "Plan day"},
